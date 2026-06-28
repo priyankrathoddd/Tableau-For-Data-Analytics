@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='January 2019' inline='true' name='federated.18gni6q1gilyxm19nqad809k7xi2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='January 2019' name='textscan.1ifu7k01hxlud21cyfq5e1t4thu8'>
+            <connection class='textscan' directory='C:/Users/Priyank/Desktop/Tableau' filename='January 2019.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='January 2019.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' />
+            <column datatype='string' name='Country' />
+            <column datatype='integer' name='Units' />
+            <column datatype='real' name='Revenue' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1ifu7k01hxlud21cyfq5e1t4thu8' name='January 2019.csv' table='[January 2019#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='integer' name='Units' ordinal='2' />
+              <column datatype='real' name='Revenue' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1ifu7k01hxlud21cyfq5e1t4thu8' name='February 2019.csv' table='[February 2019#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='integer' name='Units' ordinal='2' />
+              <column datatype='real' name='Revenue' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1ifu7k01hxlud21cyfq5e1t4thu8' name='March 2019.csv' table='[March 2019#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='integer' name='Units' ordinal='2' />
+              <column datatype='real' name='Revenue' ordinal='3' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[January 2019.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[January 2019.csv+]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[January 2019.csv+]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Units]</local-name>
+            <parent-name>[January 2019.csv+]</parent-name>
+            <remote-alias>Units</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[January 2019.csv+]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[January 2019.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='January 2019.csv' datatype='table' name='[__tableau_internal_object_id__].[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/Priyank/AppData/Local/Temp/TableauTemp/#TableauTemp_0f4ora510xg2lt1gsbys41cvl8n6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/03/2026 03:14:14 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>January 2019.csv+</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>January 2019.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Units</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Units</remote-alias>
+              <ordinal>2</ordinal>
+              <family>January 2019.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>329</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>3</ordinal>
+              <family>January 2019.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>731</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>January 2019.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[January 2019.csv_77FFA53792884477962EF6A7E5550A2D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='January 2019.csv' id='January 2019.csv_77FFA53792884477962EF6A7E5550A2D'>
+            <properties context=''>
+              <relation all='true' name='January 2019.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='Date' />
+                  <column datatype='string' name='Country' />
+                  <column datatype='integer' name='Units' />
+                  <column datatype='real' name='Revenue' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.1ifu7k01hxlud21cyfq5e1t4thu8' name='January 2019.csv' table='[January 2019#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='string' name='Country' ordinal='1' />
+                    <column datatype='integer' name='Units' ordinal='2' />
+                    <column datatype='real' name='Revenue' ordinal='3' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1ifu7k01hxlud21cyfq5e1t4thu8' name='February 2019.csv' table='[February 2019#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='string' name='Country' ordinal='1' />
+                    <column datatype='integer' name='Units' ordinal='2' />
+                    <column datatype='real' name='Revenue' ordinal='3' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1ifu7k01hxlud21cyfq5e1t4thu8' name='March 2019.csv' table='[March 2019#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='date' name='Date' ordinal='0' />
+                    <column datatype='string' name='Country' ordinal='1' />
+                    <column datatype='integer' name='Units' ordinal='2' />
+                    <column datatype='real' name='Revenue' ordinal='3' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Union'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='January 2019' name='federated.18gni6q1gilyxm19nqad809k7xi2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18gni6q1gilyxm19nqad809k7xi2'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Revenue]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Units]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Units]' derivation='Sum' name='[sum:Units:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18gni6q1gilyxm19nqad809k7xi2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18gni6q1gilyxm19nqad809k7xi2].[sum:Revenue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18gni6q1gilyxm19nqad809k7xi2].[sum:Units:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.18gni6q1gilyxm19nqad809k7xi2].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.18gni6q1gilyxm19nqad809k7xi2].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.18gni6q1gilyxm19nqad809k7xi2].[yr:Date:ok] / ([federated.18gni6q1gilyxm19nqad809k7xi2].[qr:Date:ok] / [federated.18gni6q1gilyxm19nqad809k7xi2].[mn:Date:ok]))</rows>
+        <cols>[federated.18gni6q1gilyxm19nqad809k7xi2].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{FD9FF441-AB5E-4D51-9F7A-AD27D9D484B7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='0.875' source-height='30'>
+    <window class='worksheet' maximized='true' name='Union'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.18gni6q1gilyxm19nqad809k7xi2].[mn:Date:ok]</field>
+            <field>[federated.18gni6q1gilyxm19nqad809k7xi2].[qr:Date:ok]</field>
+            <field>[federated.18gni6q1gilyxm19nqad809k7xi2].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1F6722E5-4815-4B53-96DE-32610F2BBAEE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='168' name='Union' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
